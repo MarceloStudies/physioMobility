@@ -13,8 +13,8 @@ main {
 .card {
     background: #9FC578;
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
     flex-direction: column;
     gap: 16px;
     text-align: center;

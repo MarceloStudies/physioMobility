@@ -71,3 +71,13 @@ main {
     font-size: 16px;
     font-weight: 600;
 }
+
+@media screen and (min-width: 370px) {
+    .left-style {
+        top: -2px;
+    }
+
+    .rigth-style {
+        width: 55%;
+    }
+}
