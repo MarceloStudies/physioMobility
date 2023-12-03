@@ -96,21 +96,7 @@
       <div class="conteudo">
         <section class="secao text-center">
           <div class="row">
-            <h1>Avaliação</h1>
-            <h2>Propedeutica Respiratoria</h2>
-            <div
-              class="alert alert-primary d-flex align-items-center"
-              role="alert"
-            >
-              <div>
-                Antes de iniciar a avaliação verificar se o paciente apresente
-                alguns dos principais sintomas de doença respiratória para que
-                seja possivel distinguir se o paciente foi acometido por uma
-                doença primitivamente pulmonar, pneumonia, ou se o pulmão foi
-                acometido por uma doença sistemica, como por exemplo, a
-                insuficiencia renal.
-              </div>
-            </div>
+            <h1>Fisioterapêutica</h1>
           </div>
           <div class="info-paciente card p-4">
             <form>
@@ -162,11 +148,11 @@
               </div>
               <div class="element-mark">
                 <label for="">Cor</label>
-                <input type="checkbox" />
+                <input type="text" />
               </div>
               <div class="element-mark">
                 <label for="">Consistencia</label>
-                <input type="checkbox" />
+                <input type="text" />
               </div>
               <div class="element-mark">
                 <label for="">Quantidade</label>
@@ -539,6 +525,8 @@
             </div>
           </div>
           <div class="mark-section">
+            <h2>Grau de Força:</h2>
+
             <div class="element-mark">
               <table class="table">
                 <thead class="thead-dark">
@@ -602,20 +590,28 @@
             </div>
           </div>
           <div class="mark-section">
-            <h2>Grau de Força:</h2>
+            <h2>Escala de MRC:</h2>
             <div
               class="alert alert-primary d-flex align-items-center"
               role="alert"
             >
               <div>
                 No ambiente hospitalar / UTI também utilizamos muito a avaliação
-                MRC que avalia grupos musculares específicos, sendo eles:
-                flexores do pescoço, flexores do cotovelo, extensores do punho,
-                flexores do quadril, extensores do joelho e dorsiflexores do
-                tornozelo. E os classifica de 0 a 5
+                MRC que avalia grupos musculares específicos e os classifica de 0 a 5.
               </div>
             </div>
+            <h4> Movimentos Avaliados</h4>
+            <ul class="list-group">
+              <li class="list-group-item">Abdução do ombro</li>
+              <li class="list-group-item">Flexão do cotovelo</li>
+              <li class="list-group-item">Extensão do punho</li>
+              <li class="list-group-item">Flexão do quadril</li>
+              <li class="list-group-item">Extensão do joelho</li>
+              <li class="list-group-item">Dorsiflexão do tornozelo</li>
+
+            </ul>
             <div class="element-mark">
+
               <table class="table table-hover">
                 <thead>
                   <tr>
@@ -627,7 +623,7 @@
                 <tbody>
                   <tr>
                     <td>0</td>
-                    <td>Nenhuma contração</td>
+                    <td>Nenhuma contração visivel</td>
                   </tr>
                   <tr>
                     <td>1</td>
@@ -663,6 +659,80 @@
                       Força muscular normal, movimento completo do membro contra
                       a gravidade e resistência total
                     </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="element-mark">
+              <label for="">Valor</label>
+              <input class="quantidade" type="number" />
+            </div>
+          </div>
+          <div class="mark-section">
+            <h2>Escala IMS:</h2>
+            <div
+              class="alert alert-primary d-flex align-items-center"
+              role="alert"
+            >
+              <div>
+                Intensive Mobility Scale (IMS) é uma escala que tem uma pontuação entre 
+                0 e 10 em um unico dominio, sendo que a pontuação zero indica baixa mobilidade
+                (paciente realiza apenas exercicios passivos no leito) e a pontuação 10 indica
+                uma alta mobilidade (deambulação independente)
+              </div>
+            </div>
+            <div class="element-mark">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Escala IMS</th>
+                    <th>Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td>Nada (Deitado no leito)</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Sentado no leito, exercicios no leito</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Transferido passivamente para a cadeira</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Sentado á beira leito</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Ortostatismo</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Transferência do leito para a cadeira</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Marcha estacionaria (a beira leito)</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Deambular com o auxilio de 2 ou mais pessoas</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Deambular com o auxilio de 1 pessoa</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Deambular independente com dispositivo de marcha</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Deambulação independente</td>
                   </tr>
                 </tbody>
               </table>
@@ -756,21 +826,19 @@
                     <td><input type="text" /></td>
                   </tr>
                   <tr>
-                    <td>Exames Complementares</td>
-                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
-
-                  </tr>
-                  <tr>
-                    <td>Observações</td>
-                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+                    <td>Observações de exames complementares</td>
+                    <td>
+                      <textarea name="" id="" cols="20" rows="5"></textarea>
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
+          
           <div class="mark-section">
             <h2>Escala de Dor:</h2>
-            <img src="./pain.jpeg" style="width: 100%;">
+            <img src="./pain.jpeg" style="width: 100%" />
             <div class="element-mark">
               <label for="">Valor</label>
               <input class="quantidade" type="number" />
